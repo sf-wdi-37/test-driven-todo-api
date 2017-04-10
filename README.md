@@ -105,8 +105,9 @@ Take a look at `server.js` and see if you can figure it out!
 
 ## Hints
 <details>
-<summary>**How do you find a specific object by `name` (or `id` or any specific key) in a list of objects?** (Click Here)</summary>
+<summary><strong>How do you find a specific object by `name` (or `id` or any specific key) in a list of objects?</strong> (Click Here)</summary>
 <br>
+
 ```js
 var fruits = [{name: "apricot"}, {name: "mango"}, {name: "kiwi"}];
 
@@ -124,33 +125,36 @@ var result = fruits.filter(function(f){
     return f.name === "mango";
 })[0];
 
-
 // best (new in ES6, but we can't use it yet!)
 var result = fruits.find(function(f){
     return f.name === "mango";
 });
-
 ```
+
 </details>
 
 <details>
 <summary> <strong>How do you grab the last element in an array?</strong> (Click Here)</summary>
 <br>
+
 ```js
 var fruits = [{name: "apricot"}, {name: "mango"}, {name: "kiwi"}];
 var last = fruits[fruits.length-1];
 ```
+
 </details>
 
 <details>
 <summary> <strong> How do you completely remove an element from an array? </strong> (Click Here)</summary>
 <br>
+
 ```js
 var fruits = [{name: "apricot"}, {name: "mango"}, {name: "kiwi"}];
 var apricot_index = 0;
 fruits.splice(apricot_index, 1); // remove 1 element (the apricot), starting at a given index (`0`)
 fruits; //=> [{name: "mango"}, {name: "kiwi"}]
 ```
+
 </details>
 
 ## Bonuses
