@@ -134,7 +134,7 @@ var result = fruits.find(function(f){
 </details>
 
 <details>
-<summary>**How do you grab the last element in an array?** (Click Here)</summary>
+<summary> <strong>How do you grab the last element in an array?</strong> (Click Here)</summary>
 <br>
 ```js
 var fruits = [{name: "apricot"}, {name: "mango"}, {name: "kiwi"}];
@@ -143,7 +143,7 @@ var last = fruits[fruits.length-1];
 </details>
 
 <details>
-<summary>**How do you completely remove an element from an array?** (Click Here)</summary>
+<summary> <strong> How do you completely remove an element from an array? </strong> (Click Here)</summary>
 <br>
 ```js
 var fruits = [{name: "apricot"}, {name: "mango"}, {name: "kiwi"}];
