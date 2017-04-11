@@ -133,7 +133,7 @@ var fruits = [{name: "apricot"}, {name: "mango"}, {name: "kiwi"}];
 // ok (hand-built for loop)
 var result;
 for(var i=0; i<fruits.length-1; i++)
-    if (fruits[i] === "mango"){
+    if (fruits[i].name === "mango"){
         result = fruits[i];
         break;
     }
@@ -144,7 +144,7 @@ var result = fruits.filter(function(f){
     return f.name === "mango";
 })[0];
 
-// best (new in ES6, but we can't use it yet!)
+// best (new in ES6)
 var result = fruits.find(function(f){
     return f.name === "mango";
 });
