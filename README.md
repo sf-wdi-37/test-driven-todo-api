@@ -86,7 +86,7 @@ By the end of this assignment you'll hopefully see this glorious output:
 
 But for starters you'll see output that looks like this:
 
-    ```
+    
     Todos API
     GET /api/todos (index)
       1) should respond with status 200
@@ -112,7 +112,7 @@ But for starters you'll see output that looks like this:
         Error: No Response From Server
         at Timeout._onTimeout (test/todosTest.js:30:23)
         ...
-    ```
+    
 
 
 
