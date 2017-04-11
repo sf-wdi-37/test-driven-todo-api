@@ -123,34 +123,6 @@ Why is the server responding with status `404 - Not Found` when we try to `GET /
 Take a look at `server.js` and see if you can figure it out!
 
 ## Hints
-<details>
-<summary><strong>How do you find a specific object by `name` (or `id` or any specific key) in a list of objects?</strong> (Click Here)</summary>
-<br>
-
-```js
-var fruits = [{name: "apricot"}, {name: "mango"}, {name: "kiwi"}];
-
-// ok (hand-built for loop)
-var result;
-for(var i=0; i<fruits.length-1; i++)
-    if (fruits[i].name === "mango"){
-        result = fruits[i];
-        break;
-    }
-});
-
-// good
-var result = fruits.filter(function(f){
-    return f.name === "mango";
-})[0];
-
-// best (new in ES6)
-var result = fruits.find(function(f){
-    return f.name === "mango";
-});
-```
-
-</details>
 
 <details>
 <summary> <strong>How do you grab the last element in an array?</strong> (Click Here)</summary>
@@ -172,6 +144,36 @@ var fruits = [{name: "apricot"}, {name: "mango"}, {name: "kiwi"}];
 var apricot_index = 0;
 fruits.splice(apricot_index, 1); // remove 1 element (the apricot), starting at a given index (`0`)
 fruits; //=> [{name: "mango"}, {name: "kiwi"}]
+```
+
+</details>
+
+<details>
+<summary><strong>How do you find a specific object by `name` (or `id` or any specific key) in a list of objects?</strong> (Click Here)</summary>
+<br>
+
+```js
+var fruits = [{name: "apricot"}, {name: "mango"}, {name: "kiwi"}];
+
+// ok (hand-built for loop)
+var result;
+for(var i=0; i<fruits.length-1; i++)
+    if (fruits[i].name === "mango"){
+        result = fruits[i];
+        break;
+    }
+});
+
+// good
+var resultArr = fruits.filter(function(f){
+    return f.name === "mango";
+})
+var result = resultArr[0];
+
+// best (new in ES6)
+var result = fruits.find(function(f){
+    return f.name === "mango";
+});
 ```
 
 </details>
