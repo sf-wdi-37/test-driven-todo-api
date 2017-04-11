@@ -86,16 +86,35 @@ By the end of this assignment you'll hopefully see this glorious output:
 
 But for starters you'll see output that looks like this:
 
-    0 passing (84ms)
+    ```
+    Todos API
+    GET /api/todos (index)
+      1) should respond with status 200
+      2) should respond with a javascript object translated into JSON format
+      3) the JSON object should have one key-value pair. The key should be called "data". The value should be the hardcoded array of todos
+      4) todo objects should have properities: _id, description, task
+    GET /api/todos/:id (show)
+      5) "before all" hook
+    POST /api/todos (create)
+      6) "before all" hook
+    DELETE /api/todos/:id (destroy)
+      7) "before all" hook
+    PUT /api/todos/:id (update)
+      8) "before all" hook
+    GET /api/todos/search (search)
+      9) "before all" hook
+
+
+    0 passing (2s)
     9 failing
 
     1) Todos API GET /api/todos (index) should respond with status 200:
+        Error: No Response From Server
+        at Timeout._onTimeout (test/todosTest.js:30:23)
+        ...
+    ```
 
-        Uncaught AssertionError: expected 404 to equal 200
-        + expected - actual
 
-        -404
-        +200
 
 > You can think of each failing test as being like a trail of breadcrumbs. If you pay close attention to the error messages, it should give you a clue about what to do next!
 
